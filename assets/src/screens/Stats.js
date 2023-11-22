@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-// import Feather from 'react-native-vector-icons/Feather';
+import Feather from 'react-native-vector-icons/Feather';
 const Stats = ({navigation, props}) => {
   return (
     <View style={styles.container}>
@@ -15,12 +15,12 @@ const Stats = ({navigation, props}) => {
         onPress={() => {
           navigation.goBack();
         }}>
-        {/* <Feather
+        <Feather
           name={'arrow-left'}
-          size={25}
-          color="grey"
+          size={18}
+          color="black"
           style={{marginRight: 330, marginBottom: 70}}
-        /> */}
+        />
       </TouchableOpacity>
       <View style={styles.box}>
         <View style={styles.innerbox}>
@@ -111,8 +111,8 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     position: 'absolute',
-    top: 45,
-    marginLeft: 10,
+    top: 60,
+    marginLeft: 5,
   },
   names: {
     fontSize: 14,
